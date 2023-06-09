@@ -20,7 +20,7 @@ def find_jobs():
             more_info = job.header.h2.a['href']
 
             if all(skill not in skills for skill in unfamiliar_skills):
-                with open(f'Web-Scraping/Job-Website-Scraping/posts/{index}.txt', 'w') as f:
+                with open(f'D://Coding//Python Projects//Web-Scraping//Job-Website-Scraping//posts//{index}.txt', 'w') as f:
                     f.write(f'Company Name: {company_name.strip()} \n')
                     f.write(f'Required Skills: {skills.strip()} \n')
                     f.write(f'More Info: {more_info} \n')
